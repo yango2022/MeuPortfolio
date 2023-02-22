@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lourenço Yango</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7b649a1c74.css" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href="css/responsive.css">
+
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/7b649a1c74.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="fadeIn">
+    <div class="container-principal bg">
+        <header class="cabecalho">
+            <nav class="menu-cima">
+                <ul class="menu-principal" id="meuMenuCima">
+                    <li><a href="#home" class="active">Ínicio</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="mostrarEsconderMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <section class="seccao-principal" id="home">
+
+            <div class="row">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bloco-central">
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bloco-central-back">
+                    <img class="foto-perfil" src="img/foto-perfil.jpg" alt="">
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="bloco-nome">
+                <h1>Lourenço <span>Yango</span></h1>
+                <p>Desenvolvedor web fullstack</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" class="bloco-links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <p data-aos="fade-up" data-aos-duration="3000">Siga-me nas redes sociais</p>
+
+        </section>
+
+        <section class="seccao-sobre" id="sobre">
+
+            <div data-aos="fade-right" class="bloco-foto">
+                <img src="img/foto-sobre2.jpg" alt="imagem-sobre-mim">
+            </div>
+            <div data-aos="fade-left" class="bloco-conteudo">
+                <h2>Sobre Mim</h2>
+                <h3>minha trajetória</h3>
+
+                <p>
+                    Atualmente sou licenciado em Engenharia Eletrónica e Telecomunicações, trabalho como desenvolvedor web fullstack, sou técnico de hardware e software, e também sou técnico de redes de computadores. Já trabalhei com sistema de gestão de stock numa empresa
+                    onde fui ajudante de economato, lá aprendi conceitos de banco de dados que posteriormente foram aperfeiçoados com um curso em vídeo e muito trabalho com banco de dados no desenvolvimento de sites e sistemas web. Pretendo continuar
+                    a crescer profissionalmente e contribuir para o crescimento de Angola em todos os setores no geral e no ramo das TICs em particular. Sou muito apaixonado por tecnologias e estou sempre disposto a novos desafios.
+                </p>
+                <button class="botao-primario">Baixar meu CV <i class="fa-solid fa-download"></i></button>
+            </div>
+
+        </section>
+
+        <section class="seccao-habilidades" id="skills">
+
+
+            <div data-aos="zoom-in" class="titulo-habilidade">
+                <h2>Habilidades</h2>
+                <h3>Tecnologias</h3>
+            </div>
+
+            <div class="imagem-habilidade">
+                <div data-aos="fade-up" data-aos-duration="2300" class="habilidade">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" class="habilidade">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1700" class="habilidade">
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1400" class="habilidade">
+                    <i class="fa-brands fa-php"></i>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1100" class="habilidade">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" class="habilidade">
+                    <i class="fa-brands fa-git"></i>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="500" class="habilidade">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="seccao-galeria" id="galeria">
+
+            <div data-aos="zoom-in" class="titulo-habilidade">
+                <h2>Portfólio</h2>
+                <h3>Meus trabalhos</h3>
+            </div>
+
+            <div data-aos="zoom-in" id="containerBotao">
+                <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+                <button class="btn" onclick="filterSelection('basico')"> HTML, CSS e JS</button>
+                <button class="btn" onclick="filterSelection('codeigniter')"> Codeigniter 3</button>
+                <button class="btn" onclick="filterSelection('react')"> React JS</button>
+                <button class="btn" onclick="filterSelection('python')"> Python</button>
+            </div>
+
+            <div data-aos="zoom-in" class="linha">
+
+                <div class="coluna basico">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna basico">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna basico">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="coluna codeigniter">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna codeigniter">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna codeigniter">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="coluna react">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna react">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna react">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="coluna python">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna python">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna python">
+                    <div class="conteudo">
+                        <a href="#">
+                            <img src="img/bg-websites.jpg" alt="">
+                            <h4>Nome do Projeto</h4>
+                            <p>Descrição do projeto...</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="seccao-contato" id="contato">
+
+            <div data-aos="zoom-in" class="titulo-habilidade">
+                <h2>Fale Comigo</h2>
+                <h3>como me encontrar</h3>
+            </div>
+
+            <div class="container-contato">
+
+                <div data-aos="fade-up" data-aos-duration="3500" class="form-contato">
+
+                    <div class="texto-contato">
+                        <h4>Escreva para mim</h4>
+                        <p>Solicite um serviço ou deixe uma opinião.</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="row-form">
+                            <div class="form-group">
+                                <input type="text" name="nome" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="" placeholder="Seu Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="assunto" id="" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="mensagem" id="" cols="30" rows="5" placeholder="Escreva aqui a sua mensagem."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000" class="texto-contato">
+                    <p><i class="fa-regular fa-envelope"></i> yang21loure@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +244 939 618 080</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Centralidade do Capari</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="rodape">
+            <div class="copyright">
+                <p>Copyright &#169; 2023 Lourenço Yango | Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <script src='js/mostra-esconde.js'></script>
+        <script>
+            AOS.init();
+        </script>
+    </div>
+</body>
+
+</html>
